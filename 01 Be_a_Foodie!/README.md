@@ -16,82 +16,87 @@ The restaurant has been doing fantastically and seen a lot of growth lately. You
   Create your own Business with different Franchises and order your Favorite Food items in the Menu/Custom Menu,<br>
   provided sort out the food items for the selected time and get the Food order now!
   
-Making the Menus
-At Basta Fazoolin' with my Heart our motto is simple: when you're here with family, that's great! We have four different menus: brunch, early-bird, dinner, and kids.
+### Making the Menus
 
-Create a Menu class .
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>At <em>Basta Fazoolin' with my Heart</em> our motto is simple: when you're here with family, that's great! We have four different menus: brunch, early-bird, dinner, and kids.</p>
+<p>Create a <code>Menu</code> class .</p>
+</div>
 
-Give Menu a constructor with the five parameters self, name, items, start_time, and end_time.
+* <p>Give <code>Menu</code> a constructor with the five parameters <code>self</code>, <code>name</code>, <code>items</code>, <code>start_time</code>, and <code>end_time</code>.</p>
 
-Let's create our first menu: brunch. Brunch is served from 11am to 4pm. The following items are sold during brunch:
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>Let's create our first menu: <code>brunch</code>. Brunch is served from 11am to 4pm. The following items are sold during brunch:</p>
+<pre><span class="CodeBlock__1F3rKYW3tV11w2KEKvALNg wrap__1LR6hOLkoUYCHqQeJFO6HA defaults__1l9bk0Z91YqvzRByZKNgHF cc__1zsV8w8Rj_vs2ayVLJ-2x undefined lang-py" language="lang-py"><div class="CodeMirror">{<!-- -->
+<!-- -->  <!-- --><span class="cm-string">'pancakes'</span>:<!-- --> <!-- --><span class="cm-number">7.50</span>, <span class="cm-string">'waffles'</span>: <span class="cm-number">9.00</span>, <span class="cm-string">'burger'</span>: <span class="cm-number">11.00</span>, <span class="cm-string">'home fries'</span>: <span class="cm-number">4.50</span>, <span class="cm-string">'coffee'</span>: <span class="cm-number">1.50</span>, <span class="cm-string">'espresso'</span>: <span class="cm-number">3.00</span>, <span class="cm-string">'tea'</span>: <span class="cm-number">1.00</span>, <span class="cm-string">'mimosa'</span>: <span class="cm-number">10.50</span>, <span class="cm-string">'orange juice'</span>: <span class="cm-number">3.50</span>
+}</div></span></pre>
+</div>
 
-{
-  'pancakes': 7.50, 'waffles': 9.00, 'burger': 11.00, 'home fries': 4.50, 'coffee': 1.50, 'espresso': 3.00, 'tea': 1.00, 'mimosa': 10.50, 'orange juice': 3.50
-}
-Let's create our second menu item early_bird. Early-bird Dinners are served from 3pm to 6pm. The following items are available during the early-bird menu:
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>Let's create our second menu item <code>early_bird</code>. Early-bird Dinners are served from 3pm to 6pm. The following items are available during the early-bird menu:</p>
+<pre><span class="CodeBlock__1F3rKYW3tV11w2KEKvALNg wrap__1LR6hOLkoUYCHqQeJFO6HA defaults__1l9bk0Z91YqvzRByZKNgHF cc__1zsV8w8Rj_vs2ayVLJ-2x undefined lang-py" language="lang-py"><div class="CodeMirror">{<!-- -->
+<!-- -->  <!-- --><span class="cm-string">'salumeria plate'</span>:<!-- --> <!-- --><span class="cm-number">8.00</span>, <span class="cm-string">'salad and breadsticks (serves 2, no refills)'</span>: <span class="cm-number">14.00</span>, <span class="cm-string">'pizza with quattro formaggi'</span>: <span class="cm-number">9.00</span>, <span class="cm-string">'duck ragu'</span>: <span class="cm-number">17.50</span>, <span class="cm-string">'mushroom ravioli (vegan)'</span>: <span class="cm-number">13.50</span>, <span class="cm-string">'coffee'</span>: <span class="cm-number">1.50</span>, <span class="cm-string">'espresso'</span>: <span class="cm-number">3.00</span>,
+}</div></span></pre>
+</div>
 
-{
-  'salumeria plate': 8.00, 'salad and breadsticks (serves 2, no refills)': 14.00, 'pizza with quattro formaggi': 9.00, 'duck ragu': 17.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 1.50, 'espresso': 3.00,
-}
-Let's create our third menu, dinner. Dinner is served from 5pm to 11pm. The following items are available for dinner:
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>Let's create our third menu, <code>dinner</code>. Dinner is served from 5pm to 11pm. The following items are available for dinner:</p>
+<pre><span class="CodeBlock__1F3rKYW3tV11w2KEKvALNg wrap__1LR6hOLkoUYCHqQeJFO6HA defaults__1l9bk0Z91YqvzRByZKNgHF cc__1zsV8w8Rj_vs2ayVLJ-2x undefined lang-py" language="lang-py"><div class="CodeMirror">{<!-- -->
+<!-- -->  <!-- --><span class="cm-string">'crostini with eggplant caponata'</span>:<!-- --> <!-- --><span class="cm-number">13.00</span>, <span class="cm-string">'ceaser salad'</span>: <span class="cm-number">16.00</span>, <span class="cm-string">'pizza with quattro formaggi'</span>: <span class="cm-number">11.00</span>, <span class="cm-string">'duck ragu'</span>: <span class="cm-number">19.50</span>, <span class="cm-string">'mushroom ravioli (vegan)'</span>: <span class="cm-number">13.50</span>, <span class="cm-string">'coffee'</span>: <span class="cm-number">2.00</span>, <span class="cm-string">'espresso'</span>: <span class="cm-number">3.00</span>,
+}</div></span></pre>
+</div>
 
-{
-  'crostini with eggplant caponata': 13.00, 'ceaser salad': 16.00, 'pizza with quattro formaggi': 11.00, 'duck ragu': 19.50, 'mushroom ravioli (vegan)': 13.50, 'coffee': 2.00, 'espresso': 3.00,
-}
-And let's create our last menu, kids. The kids menu is available from 11am until 9pm. The following items are available on the kids menu.
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>And let's create our last menu, <code>kids</code>. The kids menu is available from 11am until 9pm. The following items are available on the kids menu.</p>
+<pre><span class="CodeBlock__1F3rKYW3tV11w2KEKvALNg wrap__1LR6hOLkoUYCHqQeJFO6HA defaults__1l9bk0Z91YqvzRByZKNgHF cc__1zsV8w8Rj_vs2ayVLJ-2x undefined lang-py" language="lang-py"><div class="CodeMirror">{<!-- -->
+<!-- -->  <!-- --><span class="cm-string">'chicken nuggets'</span>:<!-- --> <!-- --><span class="cm-number">6.50</span>, <span class="cm-string">'fusilli with wild mushrooms'</span>: <span class="cm-number">12.00</span>, <span class="cm-string">'apple juice'</span>: <span class="cm-number">3.00</span>
+}</div></span></pre>
+</div>
 
-{
-  'chicken nuggets': 6.50, 'fusilli with wild mushrooms': 12.00, 'apple juice': 3.00
-}
-Give our Menu class a string representation method that will tell you the name of the menu. Also, indicate in this representation when the menu is available.
+* <p>Give our <code>Menu</code> class a string representation method that will tell you the <code>name</code> of the menu. Also, indicate in this representation when the menu is available.</p>
 
-Try out our string representation. If you call print(brunch) it should print out something like the following:
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>Try out our string representation. If you call <code>print(brunch)</code> it should print out something like the following:</p>
+<pre><span language="md" class="CodeBlock__1F3rKYW3tV11w2KEKvALNg wrap__1LR6hOLkoUYCHqQeJFO6HA defaults__1l9bk0Z91YqvzRByZKNgHF cc__1zsV8w8Rj_vs2ayVLJ-2x undefined"><div class="CodeMirror">brunch<!-- --> <!-- -->menu<!-- --> <!-- -->available<!-- --> <!-- -->from<!-- --> <!-- -->11am<!-- --> <!-- -->to<!-- --> <!-- -->4pm<!-- --></div></span></pre></div>
 
-brunch menu available from 11am to 4pm
-Give Menu a method .calculate_bill() that has two parameters: self, and purchased_items, a list of the names of purchased items.
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>Give <code>Menu</code> a method <code>.calculate_bill()</code> that has two parameters: <code>self</code>, and <code>purchased_items</code>, a list of the names of purchased items.</p>
+<p>Have <code>calculate_bill</code> return the total price of a purchase consisiting of all the items in <code>purchased_items</code>.</p>
+</div>
 
-Have calculate_bill return the total price of a purchase consisiting of all the items in purchased_items.
+* <p>Test out <code>Menu.calculate_bill()</code>. We have a breakfast order for one order of pancakes, one order of home fries, and one coffee. Pass that into <code>brunch.calculate_bill()</code> and print out the price.</p>
 
-Test out Menu.calculate_bill(). We have a breakfast order for one order of pancakes, one order of home fries, and one coffee. Pass that into brunch.calculate_bill() and print out the price.
+* <p>What about an early-bird purchase? Our last guests ordered the salumeria plate and the vegan mushroom ravioli. Calculate the bill with <code>.caluclate_bill()</code>.</p>
 
-What about an early-bird purchase? Our last guests ordered the salumeria plate and the vegan mushroom ravioli. Calculate the bill with .caluclate_bill().
+### Creating the Franchises
 
-Creating the Franchises
-Basta Fazoolin' with my Heart has seen tremendous success with the family market, which is fantastic because when you're at Basta Fazoolin' with my Heart with family, that's great!
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p><em>Basta Fazoolin' with my Heart</em> has seen tremendous success with the family market, which is fantastic because when you're at <em>Basta Fazoolin' with my Heart</em> with family, that's great!</p>
+<p>We've decided to create more than one restaurant to offer our fantastic menus, services, and ambience around the country.</p>
+<p>First, let's create a <code>Franchise</code> class.</p>
+</div>
 
-We've decided to create more than one restaurant to offer our fantastic menus, services, and ambience around the country.
+* <p>Give the <code>Franchise</code> class a constructor. Take in an <code>address</code>, and assign it to <code>self.address</code>. Also take in a list of <code>menus</code> and assign it to <code>self.menus</code>.</p>
 
-First, let's create a Franchise class.
+* <p>Let's create our first two franchises! Our flagship store is located at <code>"1232 West End Road"</code> and our new installment is located at <code>"12 East Mulberry Street"</code>. Pass in all four menus along with these addresses to define <code>flagship_store</code> and <code>new_installment</code>.</p>
 
-Give the Franchise class a constructor. Take in an address, and assign it to self.address. Also take in a list of menus and assign it to self.menus.
+* <p>Give our <code>Franchise</code>s a string represenation so that we'll be able to tell them apart. If we print out a <code>Franchise</code> it should tell us the address of the restaurant.</p>
 
-Let's create our first two franchises! Our flagship store is located at "1232 West End Road" and our new installment is located at "12 East Mulberry Street". Pass in all four menus along with these addresses to define flagship_store and new_installment.
+* <p>Let's tell our customers what they can order! Give <code>Franchise</code> an <code>.available_menus()</code> method that takes in a <code>time</code> parameter and returns a list of the <code>Menu</code> objects that are available at that time.</p>
 
-Give our Franchises a string represenation so that we'll be able to tell them apart. If we print out a Franchise it should tell us the address of the restaurant.
+* <p>Let's test out our <code>.available_menus()</code> method! Call it with 12 noon as an argument and print out the results.</p>
 
-Let's tell our customers what they can order! Give Franchise an .available_menus() method that takes in a time parameter and returns a list of the Menu objects that are available at that time.
+* <p>Let's do another test! If we call <code>.available_menus()</code> with 5pm as an argument and print out the results.</p>
 
-Let's test out our .available_menus() method! Call it with 12 noon as an argument and print out the results.
+### Creating Businesses!
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>Since we've been so successful building out a branded chain of restaurants, we've decided to diversify. We're going to create a restaurant that sells arepas!</p>
+<p>First let's define a <code>Business</code> class.</p>
+</div>
 
-Let's do another test! If we call .available_menus() with 5pm as an argument and print out the results.
+* <p>Give <code>Business</code> a constructor. A <code>Business</code> needs a <code>name</code> and a list of <code>franchises</code>.</p>
 
-Creating Businesses!
-Since we've been so successful building out a branded chain of restaurants, we've decided to diversify. We're going to create a restaurant that sells arepas!
+* <p>Let's create our first <code>Business</code>. The name is <code>"Basta Fazoolin' with my Heart"</code> and the two franchises are <code>flagship_store</code> and <code>new_installment</code>.</p>
 
-First let's define a Business class.
+* <div class="spacing-tight__YTkj-JgyxXu1yRjOr_AFW narrativeMarkdown__1pqyNDZ_zljr-gC8Q1pur9"><p>Before we create our new business, we'll need a <code>Franchise</code> and before our <code>Franchise</code> we'll need a menu. The items for our <em>Take a' Arepa</em> available from 10am until 8pm are the following:</p>
+<pre><span class="CodeBlock__1F3rKYW3tV11w2KEKvALNg wrap__1LR6hOLkoUYCHqQeJFO6HA defaults__1l9bk0Z91YqvzRByZKNgHF cc__1zsV8w8Rj_vs2ayVLJ-2x undefined lang-py" language="lang-py"><div class="CodeMirror">{<!-- -->
+<!-- -->  <!-- --><span class="cm-string">'arepa pabellon'</span>:<!-- --> <!-- --><span class="cm-number">7.00</span>, <span class="cm-string">'pernil arepa'</span>: <span class="cm-number">8.50</span>, <span class="cm-string">'guayanes arepa'</span>: <span class="cm-number">8.00</span>, <span class="cm-string">'jamon arepa'</span>: <span class="cm-number">7.50</span>
+}</div></span></pre>
+<p>Save this to a variable called <code>arepas_menu</code>.</p>
+</div>
 
-Give Business a constructor. A Business needs a name and a list of franchises.
+* <p>Next let's create our first <em>Take a' Arepa</em> franchise! Our new restaurant is located at <code>"189 Fitzgerald Avenue"</code>. Save the <code>Franchise</code> object to a variable called <code>arepas_place</code>.</p>
 
-Let's create our first Business. The name is "Basta Fazoolin' with my Heart" and the two franchises are flagship_store and new_installment.
-
-Before we create our new business, we'll need a Franchise and before our Franchise we'll need a menu. The items for our Take a' Arepa available from 10am until 8pm are the following:
-
-{
-  'arepa pabellon': 7.00, 'pernil arepa': 8.50, 'guayanes arepa': 8.00, 'jamon arepa': 7.50
-}
-Save this to a variable called arepas_menu.
-
-Next let's create our first Take a' Arepa franchise! Our new restaurant is located at "189 Fitzgerald Avenue". Save the Franchise object to a variable called arepas_place.
-  
 
 
